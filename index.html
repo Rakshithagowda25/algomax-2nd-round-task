@@ -1,0 +1,44 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Recruitment Platform</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+</head>
+<body>
+
+<div class="container mt-5">
+    <h2>Job Listings</h2>
+    <ul id="job-list" class="list-group">
+        <!-- Job listings will be dynamically added here -->
+    </ul>
+
+    <h2 class="mt-5">Post a Job</h2>
+    <form id="job-form">
+        <div class="form-group">
+            <label for="title">Job Title:</label>
+            <input type="text" class="form-control" id="title" required>
+        </div>
+        <div class="form-group">
+            <label for="company">Company:</label>
+            <input type="text" class="form-control" id="company" required>
+        </div>
+        <div class="form-group">
+            <label for="location">Location:</label>
+            <input type="text" class="form-control" id="location" required>
+        </div>
+        <button type="submit" class="btn btn-primary">Post Job</button>
+    </form>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
+
+
